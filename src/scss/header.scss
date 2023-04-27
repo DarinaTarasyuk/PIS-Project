@@ -1,0 +1,133 @@
+@import 'mixin';
+
+// Перший рядок з лого та меню
+.header_logo_menu 
+{
+    @include flex();
+    height: 120px;
+    border-bottom: 2px inset $yellow;
+    justify-content: space-around;
+    flex-direction: column;
+    //Для екранів менших за 992px збільшуємо висоту 
+     @media all and (max-width: 992px)
+      {
+        height: 200px;
+      }
+
+}
+
+//логотип
+.logo 
+{   
+    font-size: 40px;
+    font-weight: 700;
+    font-family: $font-family;
+    font-style: italic;
+    color: $yellow;
+    text-decoration: wavy underline  $yellow;
+    margin-left: 30px;
+
+}
+
+// меню
+.main-menu
+{
+     @include flex();
+     flex-direction: row;
+
+     button{
+        @include button($white,$yellowadd, $black, $black);
+        a{
+            @include a($white,$yellowadd);
+        }
+        flex-direction: column;
+        height: 50px;
+        text-align: center;
+        background-color: $yellow;
+        color: $black;
+        @media all and (max-width:920px)
+        {
+          
+        }
+        
+    }
+
+     a
+     {
+        @include a($gray,$yellowadd);
+     }
+    
+    // Для маленьких екранів робимо мену у стовпчик
+       @media all and (max-width:994px)
+        {
+            flex-wrap: wrap;      
+            a{
+                font-size: 36px;
+            }     
+            button {
+                display: none;
+            } 
+        }
+    
+}
+
+// основа main
+.header_main
+{
+    @include flex();
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 50px 100px ;
+    button  {
+        @include button($white,$yellowadd, $black, $black);
+        a{
+            @include a($white,$yellowadd);
+        }
+        scroll-behavior: smooth;
+    }
+
+    @media all and (max-width:980px)
+    {    
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+// текст в  основі main
+.header_text {
+    @include flex();
+    flex-direction: column;
+    gap:0px;
+    h1{
+        color: $white;
+        span:nth-child(2)
+        {
+            color:$yellow;
+        }
+    }
+    p{
+        color: $gray;
+    }
+}    
+
+//картинка
+img{
+    height: 550px;
+    @media all and (max-width: 1220px){
+        height: 400px;
+        margin: 0px 20px;
+    }
+    
+}
+
+// текст між частинами сторінки
+.header_decor_text_2 {
+    @include decor_text();
+    
+        span:nth-child(3)
+        {
+            text-shadow: 0px 0px 1px $yellow;
+        }
+
+}

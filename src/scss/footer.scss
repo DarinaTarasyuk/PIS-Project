@@ -1,0 +1,71 @@
+@import 'mixin';
+
+.footer_logo_menu
+{
+    @include flex();
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin: 50px 50px;
+
+    h3 {
+        color: $yellow;
+    }
+    
+    // лого + текст під ним
+    .logo_descr {
+        margin-top: 20px;
+         p{
+            font-weight: 400;
+            color: $white;
+            max-width: 350px;
+            margin: 20px 0px;
+          
+
+         }
+         @media all and (max-width:992px)
+         {  
+            p{
+             max-width: 992px;
+            }
+             
+            text-align: center;
+         }
+    }
+
+    p{
+        color: $gray;
+        margin: 10px;
+    }
+
+    // Для екранів менших за 992px збільшуємо висоту 
+    //  @media all and (max-width: 992px)
+    //   {
+    //     height: 200px;
+    //   }
+    
+    .add-menu {
+        @include flex();
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: normal;   
+        gap:30px;
+        a
+        {
+           @include a($gray,$yellowadd);
+        }
+       
+       //  Для маленьких екранів робимо мену у стовпчик
+     
+    }
+
+
+    @media all and (max-width:992px)
+    {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+}

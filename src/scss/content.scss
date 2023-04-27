@@ -1,0 +1,141 @@
+@import 'mixin';
+
+.content {
+    margin: 50px 100px ;
+    
+    h2{
+        @include flex();
+        color:$white;
+        span:nth-child(2)
+        {
+         color:$yellow;
+        }
+        span:nth-child(4)
+        {
+         color:$yellow;
+        }
+    }
+
+    p{
+        color:gray;
+        text-align: center;
+    }
+  
+}
+
+.services {
+    .cards {
+        @include flex();
+    }
+    
+    // картки
+    .card_service {
+        width: 270px;
+        height: 300px;
+        border: 1px inset $yellowadd;
+        @media all and (max-width: 1220px)
+        {
+          width: 350px;
+          height: 420px;
+
+        }
+    
+        h3{
+            text-align: center;
+            color: $yellowadd;
+        }
+    
+        li {
+            font-size: $li-font-size;
+            list-style-type: circle;
+            line-height: 26px;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        @media all and (max-width: 1220px){
+            li{
+                font-size: $li-font-size * 1.6;
+                line-height: 26px*1.6;
+
+            }
+        }
+    }
+}
+
+.consultation {
+    @include flex();
+    gap:0px;
+    flex-direction: column;
+
+    //форма
+    .form {
+        @include flex();
+        flex-direction: column;
+        align-items: flex-start ;
+
+        input {
+            @include input(800px, 35px);
+        }
+       
+        label {
+            @include font-size($p-font-size);
+        }
+
+        // текст всередині чекбоксу
+        div {
+            input {
+                @include input(25px, 25px);
+                margin: 10px 25px;
+             }
+
+             label {
+                color: $gray;
+             }
+       } 
+
+       
+        
+        
+    }
+   
+    button{
+        @include button($white,$yellowadd, $black, $black);
+        max-width: 100px;
+    }
+
+    @media all and (max-width: 992px){
+        .form{
+            label{
+                font-size:28px;
+            }
+        }
+    }
+}
+
+// текст між частинами сторінки
+.header_decor_text_1 {
+    @include decor_text();
+    h1{
+        span:nth-child(1)
+        {
+            text-shadow: 0px 0px 1px $yellow;
+        }
+    }
+    border-bottom: 2px inset $yellow;
+
+}
+
+// текст між частинами сторінки
+.header_decor_text_3 {
+    @include decor_text();
+    h1{
+        span:nth-child(5)
+        {
+            text-shadow: 0px 0px 1px $yellow;
+        }
+    }
+}
+
+
+

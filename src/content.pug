@@ -1,7 +1,105 @@
-main 
-    h1 main
-    article 
-        section 
-            h2 brand services
-    article 
-        h2 find out the cost and get a consultation
+a(name="main")
+main
+    div.content
+        article.services
+            h2 
+                span BRAND   
+                span SERVICES
+            p We are one of the biggest creative team and we have been helping our clients solve problems with branding and we always provide the best service for their businesses 
+            
+            div.cards
+                div.card_service
+                    h3 MARKETING
+                    ul 
+                        li SEO, site promotion
+                        li Contextual advertising
+                        li SMM
+                        li Advertising in social networks
+                        li Development of loyalty programs
+                div.card_service
+                    h3 BRANDING
+                    ul 
+                        li Market analysis and CA
+                        li Development strategy
+                        li Brand positioning
+                        li Naming, the legend of the brand
+                        li Development of a logo, brand book
+                div.card_service
+                    h3 PR
+                    ul 
+                        li Definition of the goal and CA
+                        li Reputation building
+                        li PR
+                        li SERM
+                        li Building and realise PR campaign
+                div.card_service
+                    h3 OTHER SERVICES
+                    ul 
+                        li Strategic sessions
+                        li Design
+                        li Chat bots
+                        li Landing sites
+                        li Development and implementation of CRM
+                                                                          
+    div.header_decor_text_1
+        h1 
+            span CREATIVITY
+            span /
+            span IDEAS
+            span /
+            span INNOVATION
+
+    div.content
+        article.consultation
+            h2 
+                span FIND OUT 
+                span COST 
+                span AND GET 
+                span CONSULTATION
+            p Leave your request and a message. We will contact you and answer all your questions related to branding and our services.
+            form.form
+                a(name="form")
+                label Full name 
+                    br 
+                    input(type="text" name="fio" id="fio") 
+                label Phone number 
+                    br
+                    input(type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}") 
+                label Email 
+                    br
+                    input(type="email" name="email" id="email") 
+                label Promocode 
+                    br
+                    input(type="text" name="fio" id="fio") 
+                label Choose services 
+                    div.checkbox
+                        input(type="checkbox" name="market_analysis" id="market_analysis") 
+                        label(for="market_analysis")   Market analysis and CA
+                    div
+                        input(type="checkbox" name="loyalty_program" id="loyalty_program") 
+                        label(for="loyalty_program")   Development of loyalty programs
+                    div
+                        input(type="checkbox" name="market_analysis" id="market_analysis") 
+                        label(for="market_analysis")   SEO, site promotion
+                    div
+                        input(type="checkbox" name="market_analysis" id="market_analysis") 
+                        label(for="market_analysis")   Development of a logo, brand book
+                    div
+                        input(type="checkbox" name="market_analysis" id="market_analysis") 
+                        label(for="market_analysis")   Building and realise PR campaign
+                    div
+                        input(type="checkbox" name="market_analysis" id="market_analysis") 
+                        label(for="market_analysis")   Chat bots
+                label Additional information 
+                    br
+                    input(type="textarea" name="info" id="info") 
+            button(type="button" id="calc_cost") GO
+                     
+
+    div.header_decor_text_3
+        h1 
+            span CREATIVITY
+            span /
+            span IDEAS
+            span /
+            span INNOVATION
