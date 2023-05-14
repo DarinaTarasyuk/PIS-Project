@@ -59,7 +59,7 @@ main
             p Leave your request and a message. We will contact you and answer all your questions related to branding and our services.
             form.form
                 a(name="form")
-                label Full name 
+                label Name 
                     br 
                     input(type="text" name="fio" id="fio") 
                 label Phone number 
@@ -70,7 +70,7 @@ main
                     input(type="email" name="email" id="email") 
                 label Promocode 
                     br
-                    input(type="text" name="fio" id="fio") 
+                    input(type="text" name="promocode" id="promocode") 
                 label Choose services 
                     div.checkbox
                         input(type="checkbox" name="market_analysis" id="market_analysis") 
@@ -79,17 +79,17 @@ main
                         input(type="checkbox" name="loyalty_program" id="loyalty_program") 
                         label(for="loyalty_program")   Development of loyalty programs
                     div
-                        input(type="checkbox" name="market_analysis" id="market_analysis") 
-                        label(for="market_analysis")   SEO, site promotion
+                        input(type="checkbox" name="site_promo" id="site_promo") 
+                        label(for="site_promo")   SEO, site promotion
                     div
-                        input(type="checkbox" name="market_analysis" id="market_analysis") 
-                        label(for="market_analysis")   Development of a logo, brand book
+                        input(type="checkbox" name="brandbook" id="brandbook") 
+                        label(for="brandbook")   Development of a logo, brand book
                     div
-                        input(type="checkbox" name="market_analysis" id="market_analysis") 
-                        label(for="market_analysis")   Building and realise PR campaign
+                        input(type="checkbox" name="pr_company" id="pr_company") 
+                        label(for="pr_company")   Building and realise PR campaign
                     div
-                        input(type="checkbox" name="market_analysis" id="market_analysis") 
-                        label(for="market_analysis")   Chat bots
+                        input(type="checkbox" name="chat_bot" id="chat_bot") 
+                        label(for="chat_bot")   Chat bots
                 label Additional information 
                     br
                     input(type="textarea" name="info" id="info") 
@@ -103,3 +103,14 @@ main
             span IDEAS
             span /
             span INNOVATION
+
+
+<!-- Модальнe вікно-->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    h2(id="h2")
+    p(id="main_text") 
+  </div>
+
+</div>

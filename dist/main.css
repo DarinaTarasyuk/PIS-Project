@@ -6,6 +6,14 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header.scss ***!
   \*********************************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap);
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/content.scss ***!
+  \**********************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap);
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/footer.scss ***!
+  \*********************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap);
 /*!********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/reset.scss ***!
   \********************************************************************************************************************************************************/
@@ -84,7 +92,8 @@ body {
 }
 
 header, main, footer {
-  border: 2px inset #FFF731;
+  border-top: 2px inset #FFF731;
+  border-bottom: 2px inset #FFF731;
 }
 
 h1 {
@@ -92,15 +101,42 @@ h1 {
   font-weight: 800;
   line-height: 90px;
 }
+@media all and (max-width: 1220px) {
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
 
 h2 {
   font-size: 50px;
   font-weight: 800;
 }
+@media all and (max-width: 1220px) {
+  h2 {
+    font-size: 40px;
+  }
+}
 
 h3 {
   font-size: 30px;
   font-weight: 600;
+}
+@media all and (max-width: 1220px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  a {
+    font-size: 36px;
+  }
 }
 
 header {
@@ -111,9 +147,15 @@ p {
   font-size: 20px;
   line-height: 40px;
 }
+@media all and (max-width: 1220px) {
+  p {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
 
 footer {
-  height: 512px;
+  height: auto;
 }
 
 main {
@@ -135,7 +177,8 @@ body {
 }
 
 header, main, footer {
-  border: 2px inset #FFF731;
+  border-top: 2px inset #FFF731;
+  border-bottom: 2px inset #FFF731;
 }
 
 h1 {
@@ -143,15 +186,42 @@ h1 {
   font-weight: 800;
   line-height: 90px;
 }
+@media all and (max-width: 1220px) {
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
 
 h2 {
   font-size: 50px;
   font-weight: 800;
 }
+@media all and (max-width: 1220px) {
+  h2 {
+    font-size: 40px;
+  }
+}
 
 h3 {
   font-size: 30px;
   font-weight: 600;
+}
+@media all and (max-width: 1220px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  a {
+    font-size: 36px;
+  }
 }
 
 header {
@@ -162,9 +232,15 @@ p {
   font-size: 20px;
   line-height: 40px;
 }
+@media all and (max-width: 1220px) {
+  p {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
 
 footer {
-  height: 512px;
+  height: auto;
 }
 
 main {
@@ -185,13 +261,28 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 120px;
-  border: 2px inset #FFF731;
+  border-bottom: 2px inset #FFF731;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media all and (max-width: 1220px) {
+  .header_logo_menu {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .header_logo_menu {
+    gap: 20px;
+  }
+}
+@media all and (max-width: 992px) {
+  .header_logo_menu {
+    height: 200px;
+  }
 }
 
 .logo {
@@ -203,6 +294,7 @@ main {
   text-decoration: underline;
   -webkit-text-decoration: wavy underline #FFF731;
           text-decoration: wavy underline #FFF731;
+  margin-left: 30px;
 }
 
 .main-menu {
@@ -222,6 +314,16 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+@media all and (max-width: 1220px) {
+  .main-menu {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .main-menu {
+    gap: 20px;
+  }
 }
 .main-menu button {
   display: -webkit-box;
@@ -252,15 +354,25 @@ main {
   background-color: #FFF731;
   color: #0C1113;
 }
+@media all and (max-width: 1220px) {
+  .main-menu button {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .main-menu button {
+    gap: 20px;
+  }
+}
 .main-menu button:hover {
-  color: #FFFFFF;
-  background-color: #FFF731;
+  color: #FFF851;
+  background-color: #0C1113;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
 }
 .main-menu button:not(hover) {
   color: #FFFFFF;
-  background-color: rgba(255, 247, 49, 0.9);
+  background-color: #0C1113;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
 }
@@ -269,7 +381,7 @@ main {
   font-weight: 600;
 }
 .main-menu button a:hover {
-  color: #FFFFFF;
+  color: #FFF851;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
 }
@@ -291,6 +403,18 @@ main {
   color: #717273;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
+}
+@media all and (max-width: 994px) {
+  .main-menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-menu a {
+    font-size: 36px;
+  }
+  .main-menu button {
+    display: none;
+  }
 }
 
 .header_main {
@@ -315,6 +439,16 @@ main {
   align-items: center;
   margin: 50px 100px;
 }
+@media all and (max-width: 1220px) {
+  .header_main {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .header_main {
+    gap: 20px;
+  }
+}
 .header_main button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,6 +470,16 @@ main {
   margin: 50px;
   cursor: pointer;
   scroll-behavior: smooth;
+}
+@media all and (max-width: 1220px) {
+  .header_main button {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .header_main button {
+    gap: 20px;
+  }
 }
 .header_main button:hover {
   color: #FFF851;
@@ -363,6 +507,15 @@ main {
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
 }
+@media all and (max-width: 980px) {
+  .header_main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
 
 .header_text {
   display: -webkit-box;
@@ -383,6 +536,16 @@ main {
           flex-direction: column;
   gap: 0px;
 }
+@media all and (max-width: 1220px) {
+  .header_text {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .header_text {
+    gap: 20px;
+  }
+}
 .header_text h1 {
   color: #FFFFFF;
 }
@@ -396,8 +559,14 @@ main {
 img {
   height: 550px;
 }
+@media all and (max-width: 1220px) {
+  img {
+    height: 400px;
+    margin: 0px 20px;
+  }
+}
 
-.header_decor_text {
+.header_decor_text_2 {
   font-size: 70px;
   font-weight: 800;
   font-style: normal;
@@ -408,6 +577,624 @@ img {
   text-shadow: 0px 0px 1px #FFFFFF;
   border-top: 2px inset #FFF731;
 }
-.header_decor_text h1 span:nth-child(3) {
+@media all and (max-width: 1220px) {
+  .header_decor_text_2 {
+    font-size: 70px;
+    line-height: 50px;
+  }
+}
+.header_decor_text_2 span:nth-child(3) {
   text-shadow: 0px 0px 1px #FFF731;
+}
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/content.scss (1) ***!
+  \**************************************************************************************************************************************************************/
+@charset "UTF-8";
+html {
+  font-family: "Open Sans";
+  font-size: 20px;
+  background-color: #0C1113;
+  color: #FFFFFF;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+header, main, footer {
+  border-top: 2px inset #FFF731;
+  border-bottom: 2px inset #FFF731;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 90px;
+}
+@media all and (max-width: 1220px) {
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 800;
+}
+@media all and (max-width: 1220px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+@media all and (max-width: 1220px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  a {
+    font-size: 36px;
+  }
+}
+
+header {
+  height: auto;
+}
+
+p {
+  font-size: 20px;
+  line-height: 40px;
+}
+@media all and (max-width: 1220px) {
+  p {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+footer {
+  height: auto;
+}
+
+main {
+  height: auto;
+}
+
+.content {
+  margin: 50px 100px;
+}
+.content h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #FFFFFF;
+}
+@media all and (max-width: 1220px) {
+  .content h2 {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .content h2 {
+    gap: 20px;
+  }
+}
+.content h2 span:nth-child(2) {
+  color: #FFF731;
+}
+.content h2 span:nth-child(4) {
+  color: #FFF731;
+}
+.content p {
+  color: gray;
+  text-align: center;
+}
+
+.services .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media all and (max-width: 1220px) {
+  .services .cards {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .services .cards {
+    gap: 20px;
+  }
+}
+.services .card_service {
+  width: 270px;
+  height: 300px;
+  border: 1px inset #FFF851;
+}
+@media all and (max-width: 1220px) {
+  .services .card_service {
+    width: 350px;
+    height: 420px;
+  }
+}
+.services .card_service h3 {
+  text-align: center;
+  color: #FFF851;
+}
+.services .card_service li {
+  font-size: 16px;
+  list-style-type: circle;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: left;
+}
+@media all and (max-width: 1220px) {
+  .services .card_service li {
+    font-size: 25.6px;
+    line-height: 41.6px;
+  }
+}
+
+.consultation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media all and (max-width: 1220px) {
+  .consultation {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .consultation {
+    gap: 20px;
+  }
+}
+.consultation .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media all and (max-width: 1220px) {
+  .consultation .form {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .consultation .form {
+    gap: 20px;
+  }
+}
+.consultation .form input {
+  width: 800px;
+  height: 35px;
+  padding: 0.375rem 0.75rem;
+  color: #0C1113;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+@media all and (max-width: 992px) {
+  .consultation .form input {
+    width: 640px;
+  }
+}
+.consultation .form label {
+  font-size: 20px;
+}
+.consultation .form div input {
+  width: 25px;
+  height: 25px;
+  padding: 0.375rem 0.75rem;
+  color: #0C1113;
+  font-size: 20px;
+  margin: 10px 0px;
+  margin: 10px 25px;
+}
+@media all and (max-width: 992px) {
+  .consultation .form div input {
+    width: 20px;
+  }
+}
+.consultation .form div label {
+  color: #717273;
+}
+.consultation button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 2px solid #FFF731;
+  color: #FFFFFF;
+  width: auto;
+  padding: 30px 50px;
+  height: 80px;
+  margin: 50px;
+  cursor: pointer;
+  max-width: 100px;
+}
+@media all and (max-width: 1220px) {
+  .consultation button {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .consultation button {
+    gap: 20px;
+  }
+}
+.consultation button:hover {
+  color: #FFF851;
+  background-color: #0C1113;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+.consultation button:not(hover) {
+  color: #FFFFFF;
+  background-color: #0C1113;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+@media all and (max-width: 992px) {
+  .consultation .form label {
+    font-size: 28px;
+  }
+}
+
+.header_decor_text_1 {
+  font-size: 70px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #0C1113;
+  text-shadow: 0px 0px 1px #FFFFFF;
+  border-top: 2px inset #FFF731;
+  border-bottom: 2px inset #FFF731;
+}
+@media all and (max-width: 1220px) {
+  .header_decor_text_1 {
+    font-size: 70px;
+    line-height: 50px;
+  }
+}
+.header_decor_text_1 h1 span:nth-child(1) {
+  text-shadow: 0px 0px 1px #FFF731;
+}
+
+.header_decor_text_3 {
+  font-size: 70px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #0C1113;
+  text-shadow: 0px 0px 1px #FFFFFF;
+  border-top: 2px inset #FFF731;
+}
+@media all and (max-width: 1220px) {
+  .header_decor_text_3 {
+    font-size: 70px;
+    line-height: 50px;
+  }
+}
+.header_decor_text_3 h1 span:nth-child(5) {
+  text-shadow: 0px 0px 1px #FFF731;
+}
+
+/* Модальне (фон) */
+.modal {
+  display: none; /* приховано */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /*включення прокрутки */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Модальнe (зміст) */
+.modal-content {
+  background-color: #0C1113;
+  margin: 15% auto; /* 15% зверху і по центру */
+  padding: 20px;
+  border: 1px solid #FFF851;
+  width: 80%;
+  color: #FFFFFF;
+}
+.modal-content h2 {
+  color: #FFF731;
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*!*************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/footer.scss (1) ***!
+  \*************************************************************************************************************************************************************/
+html {
+  font-family: "Open Sans";
+  font-size: 20px;
+  background-color: #0C1113;
+  color: #FFFFFF;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+header, main, footer {
+  border-top: 2px inset #FFF731;
+  border-bottom: 2px inset #FFF731;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 90px;
+}
+@media all and (max-width: 1220px) {
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 800;
+}
+@media all and (max-width: 1220px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+@media all and (max-width: 1220px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  a {
+    font-size: 36px;
+  }
+}
+
+header {
+  height: auto;
+}
+
+p {
+  font-size: 20px;
+  line-height: 40px;
+}
+@media all and (max-width: 1220px) {
+  p {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+footer {
+  height: auto;
+}
+
+main {
+  height: auto;
+}
+
+.footer_logo_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 50px 50px;
+}
+@media all and (max-width: 1220px) {
+  .footer_logo_menu {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .footer_logo_menu {
+    gap: 20px;
+  }
+}
+.footer_logo_menu h3 {
+  color: #FFF731;
+}
+.footer_logo_menu .logo_descr {
+  margin-top: 20px;
+}
+.footer_logo_menu .logo_descr p {
+  font-weight: 400;
+  color: #FFFFFF;
+  max-width: 350px;
+  margin: 20px 0px;
+}
+@media all and (max-width: 992px) {
+  .footer_logo_menu .logo_descr {
+    text-align: center;
+  }
+  .footer_logo_menu .logo_descr p {
+    max-width: 992px;
+  }
+}
+.footer_logo_menu p {
+  color: #717273;
+  margin: 10px;
+}
+.footer_logo_menu .add-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  gap: 30px;
+}
+@media all and (max-width: 1220px) {
+  .footer_logo_menu .add-menu {
+    gap: 24px;
+  }
+}
+@media all and (max-width: 992px) {
+  .footer_logo_menu .add-menu {
+    gap: 20px;
+  }
+}
+.footer_logo_menu .add-menu a {
+  color: #717273;
+  font-weight: 600;
+}
+.footer_logo_menu .add-menu a:hover {
+  color: #FFF851;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+.footer_logo_menu .add-menu a:not(hover) {
+  color: #717273;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+@media all and (max-width: 992px) {
+  .footer_logo_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }

@@ -82,6 +82,7 @@ a{
         font-size: 36px;
     }
 }
+
 header{
     height: auto;
 }
@@ -90,8 +91,8 @@ p{
     font-size: $p-font-size;
     line-height: 40px;
     @media all and (max-width: 1220px){
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 32px;
+        line-height: 42px;
     }
 
 }

@@ -138,4 +138,44 @@
 }
 
 
+/* Модальне (фон) */
+.modal {
+    display: none; /* приховано */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /*включення прокрутки */
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Модальнe (зміст) */
+  .modal-content {
+    background-color: $black;
+    margin: 15% auto; /* 15% зверху і по центру */
+    padding: 20px;
+    border: 1px solid $yellowadd;
+    width: 80%;
+    h2{
+        color: $yellow;
+    }
+    color: $white;
 
+  }
+  
+  /* Кнопка закриття */
+  .close {
+    color: $yellowadd;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
